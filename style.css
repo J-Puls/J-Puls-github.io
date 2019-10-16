@@ -39,18 +39,18 @@ body{
     color: #fafafa;
 }
 .navbar-end{
-    font-family: 'Open Sans';
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 .navbar-brand{
-    font-family: "Orbitron Black";
+    font-family: 'Orbitron Black', sans-serif;
 }
 .column{
     margin-top: 25%;
     text-align: center;
 }
 h1{
-    font-family: "Orbitron Black";
+    font-family: 'Orbitron Black', sans-serif;
 } 
 hr{
     width: 60%;
@@ -58,13 +58,13 @@ hr{
 }
 p{
     color: #fafafa;
-    font-family: 'Open Sans';
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
 }
 
 h2{
     color: #fafafa;
-    font-family: 'Open Sans';
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
     margin: 10px auto;
