@@ -1,0 +1,77 @@
+html{
+    overflow: hidden;
+}
+
+body{
+    background-image: url("https://www.mordeo.org/files/uploads/2018/04/Highway-Night-Traffic-Lights-HD-Mobile-Wallpaper-950x1689.jpg");
+    background-size: cover;
+    background-color: #111;
+    background-blend-mode: overlay;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 30px 20px;
+    font-size: 1.5em;
+    }
+.navbar-menu{
+    display: block;
+    opacity: 0;
+
+    position: absolute;   /* or float: left; width: 100%;*/
+    left: 0;
+    right: 0;
+
+    transform: translateY(-1%);
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+}
+.navbar-menu.is-active{
+    background-color: #11111199;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+.navbar-burger{
+    color: #fafafa;
+}
+.navbar-item{
+    color: #fafafa;
+}
+.navbar-end{
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+.navbar-brand{
+    font-family: "Orbitron Black";
+}
+.column{
+    margin-top: 25%;
+    text-align: center;
+}
+h1{
+    font-family: "Orbitron Black";
+} 
+hr{
+    width: 60%;
+    margin: 10px auto;
+}
+p{
+    color: #fafafa;
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+}
+
+h2{
+    color: #fafafa;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 10px auto;
+}
+.hero{
+    transition-duration: .1s;
+}
+.menu-active{
+    opacity: 0;
+}
