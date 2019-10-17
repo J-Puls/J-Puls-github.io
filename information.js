@@ -10,6 +10,9 @@ $(document).ready(function () {
         $(".hero").toggleClass("menu-active");
         $("#brand").toggleClass("menu-active");
     });
-
+    $('.card').hover(function () {
+        $(this).toggleClass('has-background-black-bis')
+        $(this).toggleClass('has-background-black')
+    })
 });
 
