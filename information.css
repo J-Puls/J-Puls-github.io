@@ -1,5 +1,5 @@
 body{
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .navbar {
@@ -45,11 +45,11 @@ body{
 
 .hero{
     padding: 20px;
-    background-color: #000000;
+   
 }
 .card{
     margin-top: 10px;
-    background-color: #000000;
+    
 }
 .card p, .content{
     color: #fafafa;
