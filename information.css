@@ -114,6 +114,12 @@ hr{
 img:hover{
     filter: brightness(50%);
 }
+.content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+}
 @media screen and (min-width: 1024px){
     .navbar-menu {
        opacity:1; 
