@@ -43,14 +43,18 @@ body{
     font-weight: 700;
 }
 .navbar-brand{
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron Black', sans-serif;
+}
+.navbar-brand a:hover, .navbar-end a:hover{
+    color: hsl(348, 100%, 61%); 
+    background-color: #111111;
 }
 .column{
     margin-top: 25%;
     text-align: center;
 }
 h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron Black', sans-serif;
     margin-bottom: 0;
 } 
 hr{
@@ -79,4 +83,10 @@ h2{
 
 .column{
     margin-top: 20%;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
 }
