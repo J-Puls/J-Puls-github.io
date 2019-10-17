@@ -57,3 +57,8 @@ body{
 .media{
     margin-bottom: 0 !important;
 }
+
+hr{
+    width: 50%;
+    margin: 20px auto;
+}
