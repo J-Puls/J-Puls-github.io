@@ -1,0 +1,63 @@
+body{
+    background-color: #444444;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/prism.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: difference;
+} 
+
+.navbar {
+    background-color: transparent;
+    padding: 30px 20px;
+    font-size: 1.5em;
+    }
+.navbar-menu{
+    display: block;
+    opacity: 0;
+
+    position: absolute;   /* or float: left; width: 100%;*/
+    left: 0;
+    right: 0;
+
+    transform: translateY(-1%);
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+}
+.navbar-menu.is-active{
+    background-color: #11111199;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+.navbar-burger{
+    color: #fafafa;
+}
+.navbar-item{
+    color: #fafafa;
+}
+.navbar-end{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.menu-active{
+    opacity: 0;
+}
+
+.hero{
+    padding: 20px;
+   
+}
+.card{
+    margin-top: 10px;
+    
+}
+.card p, .content{
+    color: #fafafa;
+}
+.media{
+    margin-bottom: 0 !important;
+}
