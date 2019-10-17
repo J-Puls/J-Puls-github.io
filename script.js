@@ -9,6 +9,15 @@ $(document).ready(function () {
         
         $(".hero").toggleClass("menu-active");
     });
-
 });
+function resizeElements(x) {
+    if (x.matches) { // If media query matches
+        $('.select').addClass('is-large')
+    } else {
+        $('.select').removeClass('is-large')
+    }
+}
 
+var x = window.matchMedia("(min-width: 1024px)")
+resizeElements(x) // Call listener function at run time
+x.addListener(resizeElements) // Attach listener function on state changes
