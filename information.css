@@ -14,17 +14,15 @@ body{
 .navbar-menu{
     display: block;
     opacity: 0;
-
     position: absolute;   /* or float: left; width: 100%;*/
     left: 0;
     right: 0;
-
     transform: translateY(-1%);
     transition: all .3s ease-in-out;
     pointer-events: none;
 }
 .navbar-menu.is-active{
-    background-color: #11111199;
+    background-color: #111111cc;
     opacity: 1;
     transform: none;
     pointer-events: auto;
@@ -32,6 +30,7 @@ body{
 .navbar-burger{
     color: #fafafa;
 }
+
 .navbar-item{
     color: #fafafa;
 }
@@ -42,10 +41,12 @@ body{
 .navbar-brand{
     font-family: 'Orbitron', sans-serif;
 }
+
 .navbar-brand a:hover, .navbar-end a:hover{
     color: hsl(348, 100%, 61%); 
     background-color: #111111;
 }
+
 .menu-active{
     opacity: 0;
 }
@@ -62,8 +63,14 @@ body{
 .card p, .content{
     color: #fafafa;
 }
-.media{
-    margin-bottom: 0 !important;
+.card-content{
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.media-content{
+    position: absolute;
+    top: 200px;
 }
 
 hr{
@@ -87,4 +94,41 @@ hr{
 }
 #footer-links a:hover{
     color: #333;
+}
+.active-link{
+    color: hsl(348, 100%, 61%);
+}
+#selects{
+    width: fit-content;
+    margin: 0 auto;
+}
+.card-footer a{
+    color: hsl(348, 100%, 61%);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.card-footer a:hover{
+    color: #333;
+}
+img:hover{
+    filter: brightness(50%);
+}
+@media screen and (min-width: 1024px){
+    .navbar-menu {
+       opacity:1; 
+       transition: none;
+       position: relative;
+       pointer-events: all;
+    }
+    .navbar-menu a{
+        font-weight: 300;
+    }
+    .navbar-brand a:hover, .navbar-end a:hover{
+        background-color: transparent;
+    }
+    .navbar-end{
+        padding-right: 30px !important;
+    }
+    .hero h2{
+        font-size: 1.7rem;
+    }
 }
