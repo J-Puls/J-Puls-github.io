@@ -30,7 +30,9 @@ body{
 .navbar-burger{
     color: #fafafa;
 }
-
+.is-one-third{
+    min-height: 563px;
+}
 .navbar-item{
     color: #fafafa;
 }
@@ -111,10 +113,6 @@ hr{
 }
 img:hover{
     filter: brightness(50%);
-}
-
-.article{
-    min-height: 563px;
 }
 @media screen and (min-width: 1024px){
     .navbar-menu {
