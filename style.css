@@ -60,7 +60,10 @@ h1 {
 } 
 hr{
     width: 60%;
+    height: 0;
     margin: 0 auto 10px auto;
+    border: 1px solid hsl(348, 100%, 61%);
+    
 }
 p{
     color: #fafafa;
@@ -77,6 +80,7 @@ h2{
 }
 .hero{
     transition-duration: .1s;
+    margin: 0 auto;
 }
 .menu-active{
     opacity: 0;
@@ -91,7 +95,14 @@ h2{
     width: 100%;
     background-color: transparent;
 }
+#select-forms{
+    background-color: #101010aa;
+    box-shadow: #000000aa 2px 3px 4px;
+}
 @media screen and (min-width: 1024px){
+    html{
+        overflow: visible;;
+    }
     .navbar-menu {
        opacity:1; 
        transition: none;
@@ -103,17 +114,15 @@ h2{
     .navbar-brand a:hover, .navbar-end a:hover{
         background-color: transparent;
     }
-    .hero{
-        margin-top: 0%;
-    }
+    
     .hero h1{
-        font-size: 6rem !important;
+        font-size: 5rem !important;
     }
     .hero p{
-        font-size: 2rem !important;
+        font-size: 1.7rem !important;
     }
     .hero h2{
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
     }
     .navbar-end{
         padding-right: 30px !important;
