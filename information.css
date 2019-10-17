@@ -112,6 +112,10 @@ hr{
 img:hover{
     filter: brightness(50%);
 }
+
+.article{
+    min-height: 563px;
+}
 @media screen and (min-width: 1024px){
     .navbar-menu {
        opacity:1; 
