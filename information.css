@@ -1,4 +1,5 @@
   body:before{
+    background-color: #111111l;
     content:"";
     position:fixed;
     z-index:-1;
