@@ -1,14 +1,13 @@
-body{
-    background-color: #111;
-    background-image: url('https://lh3.googleusercontent.com/sruXGPhhxBtEi_gm928xoG6JN8142Abhur917xlfIc3sDbID0dZ5bFn8ulyeVNzevNsaFxIUG1NcbA0guQWJ-jOXnLfgcOIlr2O8JqR-3Xj2hu8X-CQFhLLExu-jztlBFaZHM5NsDqy06QvJIkCOTrzX8_VhXrzqdYASouoADZAHNSeBUtTcgCwByDCugBccwT6IbdCiTH5bL14s2MBJnsUvHnG0IwLE9h232ht5m3JMr-EMapIaB_Aa1izUuWOQxSde5Ez1KrHKavvhI2cyDC6WPLRI8mV5yEJkOl_2ia3vjaTMKouF2ulY0LKSDp_rL9OB6zvnFaWFkTrp3Dltn9yQPCMGsRbRDRy7CFtxzEoZUATfd4hGxt5D_BvseXGe76iz8BbeZ7kitFJTGdY2L_UGbw0zRC48IRKjTFWUb28gS-iVGYe9XUW8D8K-ZBmFkh7sFN4SHRC92W_7THZWx0sgFu4iEfZ3i8uNFTgTICzEkUS7jhNc7v5DJKcqUHqQAP21g_jz_i64SWjudPDxG84nubwV3lyj7cVfOCSbNh_7Jbg8xGvC9rJZc2cx2WJQWFK9z6xV2UgeUTBxTNazWpjoQYw1EeG5AKAHpOXQIO8NbmIRwxqdQsJJ1t8QvBw8jnSPcHoMGkiJH26vy-nhApn353BxdTw0CY9gNehA1KWcx_2qxe_jDQ=s400-no');
-    background-position-x: center, initial;
-    background-position-y: 0px, initial;
-    background-size: initial, initial;
-    background-attachment: fixed, fixed;
-    background-origin: initial, initial;
-    background-clip: initial, initial;
-    background-color: initial;
-}   
+  body:before{
+    content:"";
+    position:fixed;
+    z-index:-1;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background:url('https://lh3.googleusercontent.com/sruXGPhhxBtEi_gm928xoG6JN8142Abhur917xlfIc3sDbID0dZ5bFn8ulyeVNzevNsaFxIUG1NcbA0guQWJ-jOXnLfgcOIlr2O8JqR-3Xj2hu8X-CQFhLLExu-jztlBFaZHM5NsDqy06QvJIkCOTrzX8_VhXrzqdYASouoADZAHNSeBUtTcgCwByDCugBccwT6IbdCiTH5bL14s2MBJnsUvHnG0IwLE9h232ht5m3JMr-EMapIaB_Aa1izUuWOQxSde5Ez1KrHKavvhI2cyDC6WPLRI8mV5yEJkOl_2ia3vjaTMKouF2ulY0LKSDp_rL9OB6zvnFaWFkTrp3Dltn9yQPCMGsRbRDRy7CFtxzEoZUATfd4hGxt5D_BvseXGe76iz8BbeZ7kitFJTGdY2L_UGbw0zRC48IRKjTFWUb28gS-iVGYe9XUW8D8K-ZBmFkh7sFN4SHRC92W_7THZWx0sgFu4iEfZ3i8uNFTgTICzEkUS7jhNc7v5DJKcqUHqQAP21g_jz_i64SWjudPDxG84nubwV3lyj7cVfOCSbNh_7Jbg8xGvC9rJZc2cx2WJQWFK9z6xV2UgeUTBxTNazWpjoQYw1EeG5AKAHpOXQIO8NbmIRwxqdQsJJ1t8QvBw8jnSPcHoMGkiJH26vy-nhApn353BxdTw0CY9gNehA1KWcx_2qxe_jDQ=s400-no') center center repeat;
+  }  
 
 .navbar {
     background-color: transparent;
