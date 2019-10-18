@@ -1,15 +1,18 @@
 html{
     overflow: hidden;
 }
-
 body{
-    background-image: url("https://images.unsplash.com/photo-1494481524892-b1bf38423fd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-image: url("/img-2.png");
     background-size: cover;
     background-position: center;
-    background-color: #222;
-    background-blend-mode: overlay;
-}
+    background-color: #111;
 
+    
+}
+.container{
+    height:100%;
+    position: relative;
+}
 .navbar {
     background-color: transparent;
     padding: 30px 20px;
@@ -48,15 +51,15 @@ body{
 }
 .navbar-brand a:hover, .navbar-end a:hover{
     color: hsl(348, 100%, 61%); 
-    background-color: #111111;
+    background-color: #11111166;
 }
 .column{
-    margin-top: 25%;
+    
     text-align: center;
 }
 h1 {
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 0;
+    margin-bottom: 5px !important;
 } 
 hr{
     width: 60%;
@@ -68,7 +71,6 @@ hr{
 p{
     color: #fafafa;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
 }
 
 h2{
@@ -76,8 +78,12 @@ h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 1.5em;
-    margin: 10px auto;
+    text-shadow: #111111 1px 4px 4px;
 }
+#selects{
+    margin-top: 50px !important;
+}
+
 .hero{
     transition-duration: .1s;
     margin: 0 auto;
@@ -86,9 +92,6 @@ h2{
     opacity: 0;
 }
 
-.column{
-    margin-top: 15%;
-}
 #footer{
     position: absolute;
     bottom: 0;
@@ -99,10 +102,8 @@ h2{
     background-color: #101010aa;
     box-shadow: #000000aa 2px 3px 4px;
 }
+
 @media screen and (min-width: 1024px){
-    html{
-        overflow: visible;;
-    }
     .navbar-menu {
        opacity:1; 
        transition: none;
@@ -124,7 +125,19 @@ h2{
     .hero h2{
         font-size: 1.8rem !important;
     }
-    .navbar-end{
-        padding-right: 30px !important;
+    
+}
+@media screen and (min-width: 768px) and (min-height:500px){
+    h1{
+        margin-top: 20%;
+    }
+}
+@media screen and (min-width:640px) and (max-width: 812px){
+    .hero{
+        margin-top: 0;
+        zoom:.7;
+    }
+    .navbar{
+        padding-bottom: 0;
     }
 }
