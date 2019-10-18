@@ -1,9 +1,8 @@
 body{
-    background-color: #444444;
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/prism.png');
+    background-color: #111;
+    background-image: url('/img1.png');
     background-repeat: repeat;
     background-attachment: fixed;
-    background-blend-mode: difference;
 }   
 
 .navbar {
