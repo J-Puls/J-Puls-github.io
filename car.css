@@ -1,0 +1,181 @@
+body{
+    background-color: #444444;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/prism.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: difference;
+}   
+.column{
+    padding: 10px;
+}
+.navbar {
+    background-color: transparent;
+    padding: 30px 20px;
+    font-size: 1.5em;
+    }
+.navbar-menu{
+    display: block;
+    opacity: 0;
+    position: absolute;   /* or float: left; width: 100%;*/
+    left: 0;
+    right: 0;
+    transform: translateY(-1%);
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+}
+.navbar-menu.is-active{
+    background-color: #111111cc;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+.navbar-burger{
+    color: #fafafa;
+}
+.is-one-third{
+    min-height: 563px;
+}
+.navbar-item{
+    color: #fafafa;
+}
+.navbar-end{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-brand a:hover, .navbar-end a:hover{
+    color: hsl(348, 100%, 61%); 
+    background-color: #111111;
+}
+
+.menu-active{
+    opacity: 0;
+}
+
+.hero{
+    padding: 20px;
+   
+}
+.card{
+    margin-top: 10px;
+    box-shadow: #00000033 2px 3px 4px;
+}
+
+.card p, .content{
+    color: #fafafa;
+}
+.card-content{
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.media-content{
+    position: absolute;
+    top: 200px;
+}
+
+hr{
+    width: 50%;
+    margin: 20px auto;
+}
+
+.hover{
+    background-color: #555555;
+}
+#footer-links{
+    list-style: none;
+    text-align: center;
+}
+#footer-links li{
+    display: inline;
+    padding: 10px;
+}
+#footer-links a{
+    color: hsl(348, 100%, 61%);
+}
+#footer-links a:hover{
+    color: #333;
+}
+.active-link{
+    color: hsl(348, 100%, 61%);
+}
+#selects{
+    width: fit-content;
+    margin: 0 auto;
+}
+.card-footer a{
+    color: hsl(348, 100%, 61%);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.card-footer a:hover{
+    color: #333;
+}
+img:hover{
+    filter: brightness(50%);
+}
+.content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+}
+img{
+    max-width: 300px;
+}
+
+.dropdown{
+    width: 100%;
+    
+}
+.box{
+    height: fit-content;
+}
+.dropdown-trigger {
+    width: 100%
+  }
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+.dropdown-menu{
+    width:100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dropdown-item{
+    text-align: center;
+    font-size: 1.2em;
+   
+}
+.dropdown-item a{
+    color:  hsl(348, 100%, 61%);
+}
+.dropdown-item li{
+    background-color: #111111;
+}
+
+@media screen and (min-width: 1024px){
+    .navbar-menu {
+       opacity:1; 
+       transition: none;
+       position: relative;
+       pointer-events: all;
+    }
+    .navbar-menu a{
+        font-weight: 300;
+    }
+    .navbar-brand a:hover, .navbar-end a:hover{
+        background-color: transparent;
+    }
+    .navbar-end{
+        padding-right: 30px !important;
+    }
+    .hero h2{
+        font-size: 1.7rem;
+    }
+}
