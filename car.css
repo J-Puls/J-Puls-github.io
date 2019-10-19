@@ -14,20 +14,9 @@ body{
     }
 .navbar-menu{
     display: block;
-    opacity: 0;
-    position: absolute;   /* or float: left; width: 100%;*/
-    left: 0;
-    right: 0;
-    transform: translateY(-1%);
-    transition: all .3s ease-in-out;
-    pointer-events: none;
+    background: transparent;
 }
-.navbar-menu.is-active{
-    background-color: #111111cc;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-}
+
 .navbar-burger{
     color: #fafafa;
 }
