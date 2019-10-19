@@ -5,13 +5,15 @@ $(document).ready(function () {
 
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
+        if ($('.navbar-end').is(':hidden')) {
+            $('.navbar-end').slideDown(200);
+        } else {
+            $('.navbar-end').hide(200);
+            $('.navbar-end').fadeOut(200);
+        }
 
-        $(".hero").toggleClass("menu-active");
-        $("#brand").toggleClass("menu-active");
     });
     $('.card-footer-item').hover(function () {
-
         $(this).toggleClass('has-background-black')
     })
 });
@@ -19,6 +21,7 @@ $(document).ready(function () {
 function resizeElements(x) {
     if (x.matches) { // If media query matches
         $('.select').addClass('is-large')
+        $('.navbar-end').show();
     } else {
         $('.select').removeClass('is-large')
     }
