@@ -30,7 +30,11 @@ $(document).ready(function () {
 let dropdowns = $('.dropdown');
 
 dropdowns.on('click', function () {
-    var clicked = $(this)
-    clicked.toggleClass('is-active');
-
+    var clicked = $('.dropdown-ul', this)
+    clicked.toggleClass('is-hidden');
+    for(var i = 0; i < dropdowns.length; i++){
+        if($('.dropdown-ul', '.dropdown')[i].hasClass('is-hidden')){
+            console.log('hidden');
+        }
+    }
 });
