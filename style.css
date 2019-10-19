@@ -19,24 +19,10 @@ body{
     padding: 30px 20px;
     font-size: 1.5em;
     }
-.navbar-menu{
-    display: block;
-    opacity: 0;
-
-    position: absolute;   /* or float: left; width: 100%;*/
-    left: 0;
-    right: 0;
-
-    transform: translateY(-1%);
-    transition: all .3s ease-in-out;
-    pointer-events: none;
-}
-.navbar-menu.is-active{
-    background-color: #11111199;
-    opacity: 1;
-    transform: none;
-    pointer-events: auto;
-}
+    .navbar-menu{
+        display: block;
+        background: transparent;
+    }
 .navbar-burger{
     color: #fafafa;
 }
@@ -49,6 +35,9 @@ body{
 }
 .navbar-brand{
     font-family: 'Orbitron', sans-serif;
+}
+.navbar-brand a:first{
+    visibility: hidden;
 }
 .navbar-brand a:hover, .navbar-end a:hover{
     color: hsl(348, 100%, 61%); 
