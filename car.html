@@ -6,6 +6,7 @@
     <title>Build Bible</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
     <header>
         <nav class="navbar is-fixed">
             <div class="navbar-brand">
-                <a id="brand" class="navbar-item" href="/index.html">
+                <a id="brand" class="navbar-item" href="/information.html">
                     Build Bible
                 </a>
                 <a role="button" href="#" class="navbar-burger burger">
@@ -37,119 +38,98 @@
     <section class="section">
 
         <div class="columns is-mobile-only">
-            <div class="column is-narrow ">
-                <div class="box has-background-black-bis">
-                    <figure class="image is-4x3">
-                        <img src="https://i.ytimg.com/vi/WUIp_RbKQ6o/maxresdefault.jpg" alt="">
+            <div class="column is-3-desktop ">
+                <div class="card has-background-black-bis">
+                    <figure class="image">
+                        <img src="https://cdn11.bigcommerce.com/s-6569d/images/stencil/1280x1280/products/90/845/navan__74803.1378841297.JPG?c=2&imbypass=on"
+                            alt="Image">
                     </figure>
-                    <div class="title is-4 has-text-light">
-                        Nissan 240sx - S14
+                    <div class="block">
+                        <div class="card-header-title">
+                            <h1 class="title is-4 has-text-light">Nissan S14 240sx/Silvia</h1>
+                        </div>
+                        <div class="card-content ">
+                            <table class="table is-full-width has-background-black-bis has-text-light has-text-light">
+                                <tbody>
+                                    <tr>
+                                        <th>Country of Origin</th>
+                                        <td><span class="flag-icon flag-icon-jp"></span> &nbsp;&nbsp;Japan</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Production Period</th>
+                                        <td>1994-1998</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
-            <br >
-            <div class="column is-half-desktop">
+            <br>
+            <div class="column block is-half-desktop">
                 <div class="box has-background-black-bis">
-                    <div class="columns is-multiline">
-                        <div class="column is-full dropdown test1">
-                            <div class="dropdown-trigger">
+                    <div id="dropdowns-box"  class="columns is-multiline">
+                        <div class="column is-full dropdown">
                                 <button class="button is-large is-danger is-outlined" aria-haspopup="true"
-                                    aria-controls="dropdown-menu">
-                                    <span>Factory Service Manuals</span>
-                                    <span class="icon is-small">
-                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
                             </div>
-                            <div class="menu-container">
-                                <div class="dropdown-menu has-background-black-bis" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content has-background-black-bis">
-                                        <div class="dropdown-item has-background-black-bis">
-                                            <ul>
-                                                <li><a href="#">1995-1998 240sx FSM</a></li>
-                                                <li><a href="#">1995-1998 Silvia FSM</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="column is-full dropdown test2">
-                            <div class="dropdown-trigger">
+                        <div class="column is-full dropdown">
                                 <button class="button is-large is-danger is-outlined" aria-haspopup="true"
-                                    aria-controls="dropdown-menu">
-                                    <span>Modifications</span>
-                                    <span class="icon is-small">
-                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
                             </div>
-                            <div class="menu-container">
-                                <div class="dropdown-menu has-background-black-bis" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content has-background-black-bis">
-                                        <div class="dropdown-item has-background-black-bis">
-                                            <ul>
-                                                <li><a href="#">Mechanical</a></li>
-                                                <li><a href="#">Interior</a></li>
-                                                <li><a href="#">Exterior</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="column is-full dropdown test2">
-                            <div class="dropdown-trigger">
+                        <div class="column is-full dropdown">
                                 <button class="button is-large is-danger is-outlined" aria-haspopup="true"
-                                    aria-controls="dropdown-menu">
-                                    <span>Maintenance</span>
-                                    <span class="icon is-small">
-                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
                             </div>
-                            <div class="menu-container">
-                                <div class="dropdown-menu has-background-black-bis" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content has-background-black-bis">
-                                        <div class="dropdown-item has-background-black-bis">
-                                            <ul>
-                                                <li><a href="#">Fluid Capacities</a></li>
-                                                <li><a href="#">Recommended Maintenance Intervals</a></li>
-                                                <li><a href="#">Torque Specifications</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="column is-full dropdown test2">
-                            <div class="dropdown-trigger">
+                        <div class="column is-full dropdown">
                                 <button class="button is-large is-danger is-outlined" aria-haspopup="true"
-                                    aria-controls="dropdown-menu">
-                                    <span>Other Information</span>
-                                    <span class="icon is-small">
-                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
                             </div>
-                            <div class="menu-container">
-                                <div class="dropdown-menu has-background-black-bis" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content has-background-black-bis">
-                                        <div class="dropdown-item has-background-black-bis">
-                                            <ul>
-                                                <li><a href="#">Photo Gallery</a></li>
-                                                <li><a href="#">Buyer's Guide</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 
