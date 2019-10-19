@@ -21,6 +21,7 @@ $(document).ready(function () {
 
         $(".hero").toggleClass("menu-active");
         $("#brand").toggleClass("menu-active");
+        $('#profile').toggleClass("menu-active");
     });
 
 
@@ -31,11 +32,11 @@ let dropdowns = $('.dropdown');
 
 dropdowns.on('click', function () {
     var clicked = $('.dropdown-ul', this)
-    for(var i = 0; i < dropdowns.length; i++){
-        if(!$('.dropdown-ul', dropdowns[i]).hasClass('is-hidden')){
+    for (var i = 0; i < dropdowns.length; i++) {
+        if (!$('.dropdown-ul', dropdowns[i]).hasClass('is-hidden')) {
             $('.dropdown-ul', dropdowns[i]).addClass('is-hidden')
         }
     }
     clicked.removeClass('is-hidden');
-    
+
 });
