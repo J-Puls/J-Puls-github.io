@@ -2,11 +2,12 @@ html{
     overflow: hidden;
 }
 body{
-    background-image: url("https://lh3.googleusercontent.com/CZykPLu_8xJTYklnulB2glw-4z0nCnWAFYted8wNIHAA96XZv_ljTbn5arR3fcVorsj-gPwof5A14f3iBfxkCFNGS9ZdYchBumgyuVMh7xZ-cIl0f-ufSI7IvU6x0hC4_AZgt1gKG3vY6Nwbudkof0sJu0heTM8H9Wh3NMDj_SUOVPGk0IR-yl_R_K2ziJHroY2zQcCOIW0HFs5BIEVmHfqQPCGk0BhqYSYrIyZ7eXG84YqoJEYW2uheVG2c5mHQkDphmIiu7luHnkK7uFdatsf89fZAUYT8rrQ8mzUNLp3KYOnWL99haG0OfaHsPWbSHg5bqDmjAvGJO7xP8ye_qDkejmutBz4SL8WyCUuA02sAvaTWMvQzh33_zBaBfGCs6RV6EqD9-KoSZFbnvTcGG0EhpYA9Qupr8gB_W9-VGIlSD7NPfwoZnEr2Ie3vZOrzZNE7TfwV9jXlUKiUJvcfXdCFjB5GwkCM2UAvGddoJ0F3Y4_KvqFnMlJDCvv6QP7Vb7K5yHBvkY8WVyzHd8qidNemh_lRFyRqQ3f9rk-27Y5ZwYJf67YCKu5OwwNK6P3tfm9Lcjq2MdXPjOV_mBC6vtMpWLE3p_HS0utQ8YlUDrigznC6Ho1nKYQPvqPLnIAc7RL9b5Wg1H0fk8pmk1QFaTqedPF7QULTGKHq0edsazo5B5CZo53olA=w986-h657-no");
+    background-image: url("img-2.png");
+    background-repeat: no-repeat;
+    
     background-size: cover;
-    background-position: center;
-    background-color: #111;
-
+    
+   
     
 }
 .container{
