@@ -33,10 +33,11 @@ let dropdowns = $('.dropdown');
 dropdowns.on('click', function () {
     var clicked = $('.dropdown-ul', this)
     for (var i = 0; i < dropdowns.length; i++) {
-        if (!$('.dropdown-ul', dropdowns[i]).hasClass('is-hidden')) {
-            $('.dropdown-ul', dropdowns[i]).addClass('is-hidden')
+        if (!$('.dropdown-ul', dropdowns[i]).is(':hidden')) {
+            $('.dropdown-ul', dropdowns[i]).hide(220);
         }
     }
-    clicked.removeClass('is-hidden');
-
+    if (clicked.is(':hidden')) {
+        clicked.slideDown(200, "linear");
+    }
 });
