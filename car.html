@@ -1,40 +1,180 @@
-$(document).ready(function () {
+<html>
 
-    function resizeElements(x) {
-        if (x.matches) { // If media query matches
-            $('.select').addClass('is-large')
-        } else {
-            $('.select').removeClass('is-large')
-        }
-    }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build Bible</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/car.css">
+</head>
 
-    var x = window.matchMedia("(min-width: 1024px)")
-    resizeElements(x) // Call listener function at run time
-    x.addListener(resizeElements) // Attach listener function on state changes
+<body>
+    <header>
+        <nav class="navbar is-fixed">
+            <div class="navbar-brand">
+                <a id="brand" class="navbar-item" href="/information.html">
+                    Build Bible
+                </a>
+                <a role="button" href="#" class="navbar-burger burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="/information.html" class="navbar-item active-link">Information</a>
+                    <a href="/tools.html" class="navbar-item">Tools</a>
+                    <a href="#" class="navbar-item">Contribute</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
 
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function () {
+        <div class="columns is-mobile-only">
+            <div class="column is-3-desktop ">
+                <div class="card has-background-black-bis">
+                    <figure class="image">
+                        <img src="https://cdn11.bigcommerce.com/s-6569d/images/stencil/1280x1280/products/90/845/navan__74803.1378841297.JPG?c=2&imbypass=on"
+                            alt="Image">
+                    </figure>
+                    <div class="block">
+                        <div class="card-header-title">
+                            <h1 class="title is-4 has-text-light">Nissan S14 240sx/Silvia</h1>
+                        </div>
+                        <div class="card-content ">
+                            <table class="table is-full-width has-background-black-bis has-text-light has-text-light">
+                                <tbody>
+                                    <tr>
+                                        <th>Country of Origin</th>
+                                        <td><span class="flag-icon flag-icon-jp"></span> &nbsp;&nbsp;Japan</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Production Period</th>
+                                        <td>1994-1998</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
+                    </div>
+                </div>
 
-        $(".hero").toggleClass("menu-active");
-        $("#brand").toggleClass("menu-active");
-    });
+            </div>
+            <br>
+            <div class="column block is-half-desktop">
+                <div class="box has-background-black-bis">
+                    <div id="dropdowns-box"  class="columns is-multiline">
+                        <div class="column is-full dropdown">
+                                <button class="button is-large is-danger is-outlined" aria-haspopup="true"
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-full dropdown">
+                                <button class="button is-large is-danger is-outlined" aria-haspopup="true"
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-full dropdown">
+                                <button class="button is-large is-danger is-outlined" aria-haspopup="true"
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-full dropdown">
+                                <button class="button is-large is-danger is-outlined" aria-haspopup="true"
+                                aria-controls="dropdown-menu">
+                                <span>Factory Service Manuals</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="block">
+                                <ul class="dropdown-ul is-hidden">
+                                    <li><a href="#">1995-1998 240sx FSM</a></li>
+                                    <li><a href="#">1995-1998 Silvia FSM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="column is-hidden-touch">
+                <div class="box has-background-black-bis">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minima expedita exercitationem
+                        vitae! Ducimus ea vitae et, quaerat sit nostrum harum amet impedit deserunt. Maiores fugiat
+                        tempore placeat repellat. Alias?</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    </div>
+    <section class="section">
+        <div class="columns is-mobile-only">
+            <div class="column is-one-quarter">
 
 
 
+            </div>
+    </section>
+    <div id="footer" class="column">
+        <footer class="footer has-background-black-bis">
+            <div>
+                <ul id="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Merch</a></li>
+                </ul>
+            </div>
+            <div class="content has-text-centered">
+                <small>©BuildBible.com 2019. All rights reserved.</small>
+            </div>
+        </footer>
+    </div>
 
-});
-let dropdowns = $('.dropdown');
+    <script src="/car.js"></script>
+</body>
 
-dropdowns.on('click', function () {
-    var clicked = $('.dropdown-ul', this)
-    clicked.toggleClass('is-hidden');
-    for(var i = 0; i < dropdowns.length; i++){
-        if($('.dropdown-ul', '.dropdown')[i].hasClass('is-hidden')){
-            console.log('hidden');
-        }
-    }
-});
+</html>
