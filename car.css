@@ -1,4 +1,4 @@
-  body{
+body{
     background-color: #111;
     background-image: url('img1.png');
     background-repeat: repeat;
@@ -31,9 +31,7 @@
 .navbar-burger{
     color: #fafafa;
 }
-.is-one-third{
-    min-height: 563px;
-}
+
 .navbar-item{
     color: #fafafa;
 }
@@ -66,11 +64,7 @@
 .card p, .content{
     color: #fafafa;
 }
-.card-content{
-    max-height: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+
 .media-content{
     position: absolute;
     top: 200px;
