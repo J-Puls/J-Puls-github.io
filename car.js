@@ -42,3 +42,9 @@ dropdowns.on('click', function () {
         clicked.slideDown(200);
     }
 });
+
+
+$('#bold').on('click', function () {
+
+    console.log('click');
+})
