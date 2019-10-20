@@ -1,17 +1,16 @@
 body{
-    background-color: #111;
+    background-color: #111111;
     background-image: url('img1.png');
     background-repeat: repeat;
     background-attachment: fixed;
 }   
-.column{
-    padding: 10px;
-}
+
 .navbar {
     background-color: transparent;
     padding: 30px 20px;
     font-size: 1.5em;
-    }
+
+}
 .navbar-menu{
     display: block;
     background: transparent;
@@ -37,36 +36,15 @@ body{
     background-color: #111111;
 }
 
-.menu-active{
-    opacity: 0;
-}
-
 .hero{
     padding: 20px;
-   
-}
-.card{
-    margin-top: 10px;
-    box-shadow: #00000033 2px 3px 4px;
 }
 
 .card p, .content{
     color: #fafafa;
 }
 
-.media-content{
-    position: absolute;
-    top: 200px;
-}
 
-hr{
-    width: 50%;
-    margin: 20px auto;
-}
-
-.hover{
-    background-color: #555555;
-}
 #footer-links{
     list-style: none;
     text-align: center;
@@ -84,23 +62,13 @@ hr{
 .active-link{
     color: hsl(348, 100%, 61%);
 }
-#selects{
-    width: fit-content;
-    margin: 0 auto;
-}
-.card-footer a{
-    color: hsl(348, 100%, 61%);
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.card-footer a:hover{
-    color: #333;
-}
-
 .image{
     padding: 20px;
 }
 .card{
-    border-radius: 2%;
+    border-radius: 3%;
+    margin-top: 0;
+    box-shadow: #00000033 2px 3px 4px;
 }
 .dropdown{
     width: 100%;
@@ -109,9 +77,20 @@ hr{
     padding:5px;
     
 }
-#dropdowns-box{
-    position: relative;
-    max-height: 600px !important;
+.dropdown-ul li a{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+    display: block;
+}
+.dropdown-ul li:hover{
+    background-color: #00000033;
+}
+tr, th{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    
 }
 .box{
     height: fit-content;
@@ -130,20 +109,8 @@ hr{
     margin-bottom: 20px;
 }
 
-.dropdown-item{
-    text-align: center;
-    font-size: 1.2em;
-   
-}
-.dropdown-item a{
-    color:  hsl(348, 100%, 61%);
-}
-.dropdown-item li{
-    background-color: #111111;
-}
-
-.hide{
-    opacity: 0;
+.image img{
+    border-radius: 3px;
 }
 
 @media screen and (min-width: 1024px){
@@ -161,8 +128,5 @@ hr{
     }
     .navbar-end{
         padding-right: 30px !important;
-    }
-    .hero h2{
-        font-size: 1.7rem;
     }
 }
