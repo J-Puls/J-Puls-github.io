@@ -1,0 +1,103 @@
+body{
+    background-color: #111111;
+    background-image: url('img1.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}   
+
+.navbar {
+    background-color: transparent;
+    padding: 30px 20px;
+    font-size: 1.5em;
+
+}
+.navbar-menu{
+    display: block;
+    background: transparent;
+}
+
+.navbar-burger{
+    color: #fafafa;
+}
+
+.navbar-item{
+    color: #fafafa;
+}
+.navbar-end{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-brand a:hover, .navbar-end a:hover{
+    color: hsl(348, 100%, 61%); 
+    background-color: #111111;
+}
+
+#footer-links{
+    list-style: none;
+    text-align: center;
+}
+#footer-links li{
+    display: inline;
+    padding: 10px;
+}
+#footer-links a{
+    color: hsl(348, 100%, 61%);
+}
+#footer-links a:hover{
+    color: #333;
+}
+.active-link{
+    color: hsl(348, 100%, 61%);
+}
+
+#editor{
+    width: 100%;
+    height: 60vh;
+    max-height: 60vh;
+}
+.ql-toolbar{
+    background-color: #000000;
+}
+.ql-editor{
+    padding: 50px;
+}
+.ql-editor, strong, em{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fafafa;
+}
+.ql-editor p{
+    font-size: 1.2rem;
+}
+.ql-editor h1{
+    font-family: 'Orbitron', sans-serif !important;
+    color: hsl(348, 100%, 61%) !important;
+}
+.ql-editor h2{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.ql-editor.ql-blank::before{
+    padding-left: 40px;
+    color: #999999aa !important;
+    font-size: 1.2rem;
+}
+@media screen and (min-width: 1024px){
+    .navbar-menu {
+       opacity:1; 
+       transition: none;
+       position: relative;
+       pointer-events: all;
+    }
+    .navbar-menu a{
+        font-weight: 300;
+    }
+    .navbar-brand a:hover, .navbar-end a:hover{
+        background-color: transparent;
+    }
+    .navbar-end{
+        padding-right: 30px !important;
+    }
+}
